@@ -113,8 +113,6 @@ if ( get_row_layout() == 'agent_list_grid_with_recommendation_badge' ) :
                                     <a href="tel:<?php echo esc_html($call_number); ?>" class="btn secondary-btn col-12">Call now</a>
 									<?php } ?>
                                 </div>
-                                
-
                                 <div class="quote-btn-cta" style="margin-top: 10px">
                                     <?php 
                                     if ($request_quote){ ?>
