@@ -28,7 +28,7 @@ if ($section_background == 'Muted'){
 <section class="section-padding <?php echo esc_attr($section_class); ?> <?=$section_padding_class;?> <?php echo esc_attr($bg_class); ?>">
     <div class="container"> 
         <div class="row">
-            <div class="col-md-6 pr-5 text-primary">
+            <div class="col-lg-6 col-md-12 col-sm-12 pr-md-5 text-primary">
                 <?php if ( $left_title ) : ?>
                     <h2 class="text-primary heading-600"><?php echo esc_html( $left_title ); ?></h2>
                 <?php endif; ?>
@@ -39,7 +39,7 @@ if ($section_background == 'Muted'){
                     <a href="<?php echo esc_url( $btn_url ); ?>" class="mt-3"><?php echo esc_html( $btn_text ); ?></a>
                 <?php endif; ?>
             </div>
-            <div class="col-md-6 grid-items">
+            <div class="col-lg-6 col-md-12 col-sm-12 grid-items">
                 <?php if ( $right_title ) : ?>
                     <h4><?php echo esc_html( $right_title ); ?></h4>
                 <?php endif; ?>
@@ -50,7 +50,7 @@ if ($section_background == 'Muted'){
                             $grid_image = $item['grid_image'];
                             $grid_title = $item['grid_title'];
                         ?>
-                        <div class="col-4 mb-5 ">
+                        <div class="col-4 ex-grid-item mb-5 ">
                             <?php if ( $grid_image ) : ?>
                                 <img src="<?php echo esc_url( $grid_image['url'] ); ?>" alt="<?php echo esc_attr( $grid_image['alt'] ); ?>" class="img-fluid mb-2" style="height:45px; width:45px;">
                             <?php endif; ?>

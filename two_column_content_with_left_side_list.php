@@ -27,15 +27,15 @@ if ($section_background == 'Muted'){
 <section class="section-padding <?php echo esc_attr($section_class); ?> <?=$section_padding_class;?> <?php echo esc_attr($bg_class); ?>">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 pr-5">
+            <div class="col-lg-6 col-md-12 col-sm-12 pr-md-5">
                 <?php if ( $left_side_title ) : ?>
                     <h2 class="text-primary heading-600"><?php echo esc_html( $left_side_title ); ?></h2>
                 <?php endif; ?>
                 <?php if ( $left_side_content ) : ?>
-                    <p class="mt-5"><?php echo esc_html( $left_side_content ); ?></p>
+                    <p class="mt-3"><?php echo esc_html( $left_side_content ); ?></p>
                 <?php endif; ?>
                 <?php if ( $list_heading ) : ?>
-                    <p class="mt-5"><?php echo esc_html( $list_heading ); ?></p>
+                    <p class="mt-3"><?php echo esc_html( $list_heading ); ?></p>
                 <?php endif; ?>
                 <?php if ( $list) : ?>
                     <ul class="mt-3">
@@ -46,7 +46,7 @@ if ($section_background == 'Muted'){
                     </ul>
                 <?php endif; ?>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <?php if ( $right_side_content ) : ?>
 				<div>
 					
