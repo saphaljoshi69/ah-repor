@@ -36,7 +36,7 @@ if ( get_row_layout() == "two_column_cta_with_text_and_image") :
                 <?php endif; ?>
 
                 <?php if ($cta_content) : ?>
-                    <p class="mt-3"><?= $cta_content; ?></p>
+                    <div class="mt-3"><?=$cta_content; ?></div>
                 <?php endif; ?>
 				<?php if ($select_carrier_cta_link_option == 'Global Insured Carrier CTA Link') : ?>
             <div class="cta-search-form-zip-email mt-4">
