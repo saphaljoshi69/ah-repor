@@ -26,19 +26,21 @@ if ( get_row_layout() == 'two_column_section_right_side_extend' ) :
     } else {
         $section_padding_cls = '';
     }
+
 ?>
-<section class="section-padding <?= esc_attr($section_class); ?> <?= esc_attr($section_padding_cls); ?>"
-         style="background-image:url('<?= esc_url($background_image['url']); ?>');
+	
+<section class="section-padding hero-banner <?= esc_attr($section_class); ?> <?= esc_attr($section_padding_cls); ?> d-flex align-items-center"
+        style="background-image:url('<?= esc_url($background_image['url']); ?>');
                 background-repeat:no-repeat;
                 background-size:cover;
                 background-position:right bottom;
-                min-height:70vh;">
+                min-height:80vh;" >
 
-    <div class="container">
-        <div class="content-wrapper" style="width:70%;">
-            <p class="text-meta"><?= esc_html($meta_text); ?></p>
-            <<?= $tag; ?> class="text-primary heading-700"><?= esc_html($title); ?></<?= $tag; ?>>
-            <p><?= wp_kses_post($content); ?></p>
+    <div class="container ">
+        <div class="content-wrapper">
+            <h3 class="text-meta"><?=$meta_text; ?></h3>
+            <<?= $tag; ?> class="text-primary heading-700"><?=$title; ?></<?= $tag; ?>>
+				<h5 class="mt-3 mb-2"><?=$content; ?></h5>
 
             <?php if ($cta_form == 'Global Insured Carrier CTA Link') : ?>
                 <div class="zipcode-email mt-5">

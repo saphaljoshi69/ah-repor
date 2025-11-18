@@ -35,7 +35,7 @@ if ($section_padding == 'Default') {
     $section_padding_class = ' pb-0';
 }
 ?>
-<section class="section-padding two-column-list<?=$section_padding_class;?><?=$bg_class?>" id="<?=$section_class?>">
+<section class="section-padding two-column-list<?=$section_padding_class;?> <?=$bg_class?>" id="<?=$section_class?>">
 <div class="container">
 <?php if ($section_heading) { ?>
 <h2 class="text-primary mb-3 heading-600<?=$text_alignment_class?>" style="width: 800px;max-width: 100%; <?=$max_width;?>"><?php echo $section_heading; ?></h2>
