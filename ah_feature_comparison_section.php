@@ -30,7 +30,7 @@ if ( get_row_layout() == 'ah_feature_comparison_section' ):
 
     <section class="section-padding <?= $section_class; ?> <?= $padding_class; ?> <?= $bg_class; ?>">
 
-        <div class="container-sm">
+        <div class="container-sm mx-auto" style="max-width:1000px;">
             <?php if ($section_title): ?>
             <div class="section-content text-center">
                 <?php if ($section_meta_text): ?>
@@ -53,16 +53,18 @@ if ( get_row_layout() == 'ah_feature_comparison_section' ):
                     <tbody>
                         <tr >
                             <td style="width: 60%;">
-
+								<p class="text-primary " style="font-weight:600;">
+									What Matters
+								</p>
                             </td>
                             <td  style="width: 20%;">
-                                <p class="text-primary d-flex justify-content-center" style="font-weight:500;">
+                                <p class="text-primary d-flex justify-content-center" style="font-weight:600;">
 									Agency Height
 								</p>
                             </td>
                             <td  style="width: 20%;">
-                                <p class="text-primary d-flex justify-content-center" style="font-weight:500;">
-									Others
+                                <p class="text-muted d-flex justify-content-center" style="font-weight:600;">
+									Traditional Brokers
 								</p>
                             </td>
                         </tr>
@@ -73,24 +75,24 @@ if ( get_row_layout() == 'ah_feature_comparison_section' ):
                         ?>
                         <tr class="mb-3" style="border-top:1px solid #e1e1e1;">
                             <td>
-                                <div class="comparison-row d-flex <?php if( !wp_mobile_device() ){
-                                            echo 'align-items-center';
-                                } ?> ">
+                                <div class="comparison-row d-flex">
+                                    <?php if ($img):?>
                                     <div class="image mr-3">
-                                        <img loading="eager" src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt']); ?>" style="height:42px; width:42px;">
+                                        <img loading="eager" src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt']); ?>" style="height:32px; width:32px;">
                                     </div>
+                                    <?php endif; ?>
                                     <div class="content text-primary">
                                         <?= $content; ?>
                                     </div>
                                 </div>
                             </td>
-                            <td>
-                                <div class="feature-available d-flex justify-content-center">
+                            <td class="">
+                                <div class="feature-available ">
                                     <img loading="eager" src="<?php echo get_stylesheet_directory_uri(); ?>/images/check-primary-icon.svg" alt="feature available" style="width:16px; height:16px;">
                                 </div>
                             </td>
                             <td class="">
-                                <div class="feature-unavailable d-flex justify-content-center">
+                                <div class="feature-unavailable ">
                                     <img loading="eager" src="<?php echo get_stylesheet_directory_uri(); ?>/images/cross-disable-icon.svg" alt="feature unavailable" style="width:16px; height:16px;">
                                 </div>
                             </td>

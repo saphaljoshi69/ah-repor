@@ -32,9 +32,11 @@ if ( get_row_layout() == 'left_side_color_card_section' ):
             <?php 
             if ( $section_heading ):
             ?>
-            <div class="col-md-6 left-content text-center text-md-start">
-                <h2 class="text-primary heading-700 text-center text-md-start"><?= $section_heading; ?></h2>
-                <div class="content_waper mt-3 text-primary text-center text-md-start">
+            <div class="col-md-6 left-content <?php if (wp_is_mobile()){
+                echo 'text-center';
+            }">
+                <h2 class="text-primary heading-700 "><?= $section_heading; ?></h2>
+                <div class="content_waper mt-3 ">
                     <?= $section_content; ?>
                 </div>
             </div>
