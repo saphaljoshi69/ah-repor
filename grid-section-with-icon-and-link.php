@@ -102,7 +102,7 @@ if ( get_row_layout() == 'grid_list_section_with_icon_and_link' ) :
         <?php endif; ?>
 		<?php if ( $more_link ): ?>
 <div class="more-link mt-5 text-center">
-	<a href="<?php echo esc_url( $more_link ); ?>" style="font-weight:500;width: fit-content; padding:15px 20px; background:#E6E9F0; border-radius:50px; color:#292929;" >View More</a>
+	<a href="<?php echo esc_url( $more_link ); ?>" class="btn muted-btn" >View More</a>
 		</div>
 		<?php endif; ?>
     </div>
